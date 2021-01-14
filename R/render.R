@@ -231,7 +231,7 @@ process_markdown = function(res, x = read_utf8(res)) {
     read_utf8(f)
   })
   # protect math expressions in backticks
-  x = xfun::protect_math(x)
+  # x = xfun::protect_math(x)
   # remove the special comments from HTML dependencies
   x = gsub('<!--/?html_preserve-->', '', x)
   # render citations
